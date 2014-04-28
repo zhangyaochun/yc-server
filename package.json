@@ -1,6 +1,6 @@
 {
   "name": "yc-server",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "this is server for yc",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "dependencies": {
     "colorful": "2.1.0",
     "connect": "2.14.5",
-    "yc-open": "0.0.5",
+    "yc-open": "0.0.2",
     "connect-livereload": "0.4.0"
   },
   "author": "zhangyaochun",
