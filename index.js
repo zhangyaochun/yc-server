@@ -2,6 +2,7 @@
 
 //core
 var http = require('http');
+var util = require('util');
 
 //third part
 var open = require('yc-open');
@@ -18,6 +19,20 @@ function prepareOpts(opts) {
 
     //default open
     opts.open = opts.open || true;
+}
+
+
+function parseArgs(source) {
+    
+    var result = {};
+
+    source.replace(/--([^\s]+)\s+([^\s]+)/g, function($0, $1, $2) {
+        if ($0) {
+            result[$1] = $2;
+        }
+    });
+
+    return result;
 }
 
 
